@@ -18,6 +18,11 @@ GRANT ALL PRIVILEGES ON post_board.* TO 'web'@'localhost' identified by 'P@ssw0r
 
 # PHP 설치
 sudo apt install php php-mysql
+
+# PHP 에러 페이지 설정
+sudo sed -i 's/display_errors = Off/display_errors = On/g' /etc/php/7.2/apache2/php.ini
+
+
  
 
 
